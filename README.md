@@ -4,8 +4,15 @@
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=seekerk_ctest&metric=bugs)](https://sonarcloud.io/summary/new_code?id=seekerk_ctest)
 [![Code smells](https://sonarcloud.io/api/project_badges/measure?project=seekerk_gtest&metric=code_smells)](https://sonarcloud.io/dashboard?id=seekerk_gtest)
 
-#План тестирования
+# План тестирования
 ## Тест 1
+Входные данные: 
+a = 
+b = 
+c = 
+Ожидаемый результат:
+x1 = 
+x2 = 
 
 # Пример работы связки Qt + Google Test (gtest) + QtCreator
 
