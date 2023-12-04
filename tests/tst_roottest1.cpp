@@ -14,7 +14,7 @@ TEST(rootTest, rootTest1)
     ASSERT_THAT(0, Eq(0));
 }
 
-
+// 1
 TEST(rootTest, positive_d)
 {
     double a, b, c, x1, x2;
@@ -31,6 +31,7 @@ TEST(rootTest, positive_d)
     ASSERT_EQ(x2, x2_answ);
 }
 
+// 2
 TEST(rootTest, zero_d)
 {
     double a, b, c, x1, x2;
@@ -47,6 +48,7 @@ TEST(rootTest, zero_d)
     ASSERT_EQ(x2, x2_answ);
 }
 
+// 3
 TEST(rootTest, negative_d)
 {
     double a, b, c, x1, x2;
@@ -65,7 +67,7 @@ TEST(rootTest, negative_d)
     ASSERT_EQ(x2, x2_answ);
 }
 
-
+// 4
 TEST(rootTest, zero_c1)
 {
     double a, b, c, x1, x2;
@@ -82,6 +84,7 @@ TEST(rootTest, zero_c1)
     ASSERT_EQ(x2, x2_answ);
 }
 
+// 5
 TEST(rootTest, zero_c2)
 {
     double a, b, c, x1, x2;
@@ -98,6 +101,7 @@ TEST(rootTest, zero_c2)
     ASSERT_EQ(x2, x2_answ);
 }
 
+// 6
 TEST(rootTest, zero_b1)
 {
     double a, b, c, x1, x2;
@@ -114,6 +118,7 @@ TEST(rootTest, zero_b1)
     ASSERT_EQ(x2, x2_answ);
 }
 
+// 7
 TEST(rootTest, zero_b2)
 {
     double a, b, c, x1, x2;
@@ -133,6 +138,7 @@ TEST(rootTest, zero_b2)
     ASSERT_EQ(x2, x2_answ);
 }
 
+// 8
 TEST(rootTest, zero_b_c)
 {
     double a, b, c, x1, x2;
@@ -149,6 +155,7 @@ TEST(rootTest, zero_b_c)
     ASSERT_EQ(x2, x2_answ);
 }
 
+// 9
 TEST(rootTest, zero_a)
 {
     double a, b, c, x1, x2;
@@ -165,6 +172,7 @@ TEST(rootTest, zero_a)
     ASSERT_EQ(x2, x2_answ);
 }
 
+// 10
 TEST(rootTest, zero_a2)
 {
     double a, b, c, x1, x2;
@@ -181,6 +189,7 @@ TEST(rootTest, zero_a2)
     ASSERT_EQ(x2, x2_answ);
 }
 
+// 11
 TEST(rootTest, zero_a3)
 {
     double a, b, c, x1, x2;
@@ -197,7 +206,7 @@ TEST(rootTest, zero_a3)
     ASSERT_EQ(x2, x2_answ);
 }
 
-
+// 12
 TEST(rootTest, zero_a_b1)
 {
     double a, b, c, x1, x2;
@@ -214,6 +223,7 @@ TEST(rootTest, zero_a_b1)
     ASSERT_EQ(x2, x2_answ);
 }
 
+// 13
 TEST(rootTest, zero_a_b2)
 {
     double a, b, c, x1, x2;
@@ -230,6 +240,7 @@ TEST(rootTest, zero_a_b2)
     ASSERT_EQ(x2, x2_answ);
 }
 
+// 14
 TEST(rootTest, zero_a_b_c)
 {
     double a, b, c, x1, x2;
@@ -246,6 +257,7 @@ TEST(rootTest, zero_a_b_c)
     ASSERT_EQ(x2, x2_answ);
 }
 
+// 15
 TEST(rootTest, zero_a_c1)
 {
     double a, b, c, x1, x2;
@@ -262,6 +274,7 @@ TEST(rootTest, zero_a_c1)
     ASSERT_EQ(x2, x2_answ);
 }
 
+// 16
 TEST(rootTest, zero_a_c2)
 {
     double a, b, c, x1, x2;
