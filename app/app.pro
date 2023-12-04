@@ -14,3 +14,9 @@ QMAKE_CFLAGS += -Wall -Wextra -Werror
 # gcov
 QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
 LIBS += -lgcov
+
+deltarget.commands = $$QMAKE_DEL_FILE $$TARGET
+QMAKE_EXTRA_TARGETS += deltarget
+PRE_TARGETDEPS += deltarget
+
+

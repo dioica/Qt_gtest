@@ -22,7 +22,9 @@ HEADERS +=     tst_test1.h \
     tst_stdout.h
 
 SOURCES +=     main.cpp \
-    ../app/myfunc.c
+    ../app/myfunc.c \
+    tst_roottest1.cpp \
+    tst_test1.cpp
 
 INCLUDEPATH += ../app
 
