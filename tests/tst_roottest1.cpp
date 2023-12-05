@@ -53,14 +53,14 @@ TEST(rootTest, negative_d)
 {
     double a, b, c, x1, x2;
     double x1_answ, x2_answ;
-    count_roots = 0;
+    int count_roots = 0;
 
     a = 3;
     b = 1;
     c = 2;
     rootSearch(a, b, c, &x1, &x2);
 
-    ASSERT_EQ(rootTest(a, b, c, &x1, &x2), count_roots);
+    ASSERT_EQ(rootSearch(a, b, c, &x1, &x2), count_roots);
 }
 
 // 4
@@ -121,16 +121,12 @@ TEST(rootTest, zero_b2)
     double x1_answ, x2_answ;
 
     count_roots = 0;
-
-    x1 = -999;
-    x2 = -999;
-
     a = 1;
     b = 0;
     c = 3;
     rootSearch(a, b, c, &x1, &x2);
 
-    ASSERT_EQ(rootTest(a, b, c, &x1, &x2), count_roots);
+    ASSERT_EQ(rootSearch(a, b, c, &x1, &x2), count_roots);
 }
 
 // 8
