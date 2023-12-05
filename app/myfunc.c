@@ -67,7 +67,7 @@ int rootSearch(double a, double b, double c, double* x1, double* x2){
         *x1 = -(b / (2 * a));
         *x2 = -(b / (2 * a));
 
-        return 2;
+        return 1;
     }
 
     else if (d < 0) // Условие при дискриминанте меньше нуля
