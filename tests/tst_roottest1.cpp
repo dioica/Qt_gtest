@@ -21,12 +21,14 @@ TEST(rootTest, positive_d)
     double x1_answ, x2_answ;
     x1_answ = 1;
     x2_answ = 2;
+    count_roots = 2;
 
     a = 1;
     b = -3;
     c = 2;
     rootSearch(a, b, c, &x1, &x2);
 
+    ASSERT_EQ(rootTest(a, b, c), count_roots);
     ASSERT_EQ(x1, x1_answ);
     ASSERT_EQ(x2, x2_answ);
 }
