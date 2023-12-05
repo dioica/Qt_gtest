@@ -76,7 +76,7 @@ int rootSearch(double a, double b, double c, double* x1, double* x2){
     else if (d < 0) // Условие при дискриминанте меньше нуля
     {
         // нет корней
-        retern 0;
+        return 0;
     }
 }
 
