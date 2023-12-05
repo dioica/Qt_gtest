@@ -120,7 +120,7 @@ TEST(rootTest, zero_b2)
     double a, b, c, x1, x2;
     double x1_answ, x2_answ;
 
-    count_roots = 0;
+    int count_roots = 0;
     a = 1;
     b = 0;
     c = 3;
