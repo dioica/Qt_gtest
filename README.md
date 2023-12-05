@@ -4,6 +4,8 @@
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=seekerk_ctest&metric=bugs)](https://sonarcloud.io/summary/new_code?id=seekerk_ctest)
 [![Code smells](https://sonarcloud.io/api/project_badges/measure?project=seekerk_gtest&metric=code_smells)](https://sonarcloud.io/dashboard?id=seekerk_gtest)
 
+[![Coverage Status](https://coveralls.io/repos/github/dioica/Qt_gtest/badge.svg?branch=main)](https://coveralls.io/github/dioica/Qt_gtest?branch=main)
+
 # План тестирования
 ## Тест 1
 Входные данные: 
