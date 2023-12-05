@@ -43,10 +43,7 @@ int rootSearch(double a, double b, double c, double* x1, double* x2){
 
     if (a == 0 && b== 0)
     {
-        *x1 = -c;
-        *x2 = -c;
-
-      return 1;
+      return 0;
     }
 
     else if (a == 0 && b != 0)
