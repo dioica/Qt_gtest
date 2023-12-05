@@ -37,7 +37,7 @@ int fibonachi(int num) {
 }
 
 
-void rootSearch(double a, double b, double c, double* x1, double* x2){
+int rootSearch(double a, double b, double c, double* x1, double* x2){
     // Рассчитываем дискриминант
     double d = b * b - 4 * a * c;
 
@@ -45,29 +45,38 @@ void rootSearch(double a, double b, double c, double* x1, double* x2){
     {
         *x1 = -c;
         *x2 = -c;
+
+      return 1;
     }
 
     else if (a == 0 && b != 0)
     {
         *x1 = -c/b;
         *x2 = -c/b;
+
+        return 1;
     }
 
     else if (d > 0) // Условие при дискриминанте больше нуля
     {
         *x1 = ((-b) - sqrt(d)) / (2 * a);
         *x2 = ((-b) + sqrt(d)) / (2 * a);
+
+        return 2;
     }
 
     else if (d == 0) // Условие для дискриминанта равного нулю
     {
         *x1 = -(b / (2 * a));
         *x2 = -(b / (2 * a));
+
+        return 2;
     }
 
     else if (d < 0) // Условие при дискриминанте меньше нуля
     {
         // нет корней
+        retern 0;
     }
 }
 
