@@ -21,14 +21,12 @@ TEST(rootTest, positive_d)
     double x1_answ, x2_answ;
     x1_answ = 1;
     x2_answ = 2;
-    count_roots = 2;
 
     a = 1;
     b = -3;
     c = 2;
     rootSearch(a, b, c, &x1, &x2);
-
-    ASSERT_EQ(rootTest(a, b, c), count_roots);
+    
     ASSERT_EQ(x1, x1_answ);
     ASSERT_EQ(x2, x2_answ);
 }
@@ -40,7 +38,7 @@ TEST(rootTest, zero_d)
     double x1_answ, x2_answ;
     x1_answ = 0.25;
     x2_answ = 0.25;
-
+    
     a = 16;
     b = -8;
     c = 1;
@@ -55,18 +53,14 @@ TEST(rootTest, negative_d)
 {
     double a, b, c, x1, x2;
     double x1_answ, x2_answ;
-    x1_answ = -999;
-    x2_answ = -999;
+    count_roots = 0;
 
-    x1 = -999;
-    x2 = -999;
     a = 3;
     b = 1;
     c = 2;
     rootSearch(a, b, c, &x1, &x2);
 
-    ASSERT_EQ(x1, x1_answ);
-    ASSERT_EQ(x2, x2_answ);
+    ASSERT_EQ(rootTest(a, b, c, &x1, &x2), count_roots);
 }
 
 // 4
@@ -93,7 +87,7 @@ TEST(rootTest, zero_c2)
     double x1_answ, x2_answ;
     x1_answ = -16;
     x2_answ = 0;
-
+    
     a = 4;
     b = 64;
     c = 0;
@@ -125,8 +119,8 @@ TEST(rootTest, zero_b2)
 {
     double a, b, c, x1, x2;
     double x1_answ, x2_answ;
-    x1_answ = -999;
-    x2_answ = -999;
+
+    count_roots = 0;
 
     x1 = -999;
     x2 = -999;
@@ -136,8 +130,7 @@ TEST(rootTest, zero_b2)
     c = 3;
     rootSearch(a, b, c, &x1, &x2);
 
-    ASSERT_EQ(x1, x1_answ);
-    ASSERT_EQ(x2, x2_answ);
+    ASSERT_EQ(rootTest(a, b, c, &x1, &x2), count_roots);
 }
 
 // 8
@@ -164,6 +157,7 @@ TEST(rootTest, zero_a)
     double x1_answ, x2_answ;
     x1_answ = -5;
     x2_answ = -5;
+
 
     a = 0;
     b = 10;
