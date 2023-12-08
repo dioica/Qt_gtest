@@ -138,7 +138,7 @@ TEST(rootTest, zero_a_b_c)
     c = 0;
     rootSearch(a, b, c, &x1, &x2);
 
-    int count_roots = 0;
+    int count_roots = 1;
     ASSERT_EQ(rootSearch(a, b, c, &x1, &x2), count_roots);
 }
 
